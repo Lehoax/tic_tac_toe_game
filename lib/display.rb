@@ -16,6 +16,9 @@ class Display
         puts "█▀█ █░█ █▄▄ █▄█".center(70).red 
         puts "█▀▄ █▄█ █▄█ ░█░".center(70).red
         puts
+        puts
+        puts "/_\\Pour jouer écrit les coordonnées dans ce format -> a1".red
+        puts
     end
     def ask_name_player(nb)
         print "Joueur\s"
@@ -26,12 +29,14 @@ class Display
   
     def board
         puts " -------------".center(70)
-        puts " | #{@board.board[":c1"]} | #{@board.board[":c2"]} | #{@board.board[":c3"]} |".center(70)
+        puts "c | #{@board.board[":c1"]} | #{@board.board[":c2"]} | #{@board.board[":c3"]} |".center(70)
         puts " -------------".center(70)
-        puts " | #{@board.board[":b1"]} | #{@board.board[":b2"]} | #{@board.board[":b3"]} |".center(70)
+        puts "b | #{@board.board[":b1"]} | #{@board.board[":b2"]} | #{@board.board[":b3"]} |".center(70)
         puts " -------------".center(70)
-        puts " | #{@board.board[":a1"]} | #{@board.board[":a2"]} | #{@board.board[":a3"]} |".center(70)
-        puts " -------------".center(70)
+        puts "a | #{@board.board[":a1"]} | #{@board.board[":a2"]} | #{@board.board[":a3"]} |".center(70)
+        puts " ---------------".center(70)
+        puts "    1   2   3   ".center(70)
+
     end
     def victory(name_player)
         puts "____    ____  __    ______ .___________.  ______    __  .______       _______ ".yellow
