@@ -4,12 +4,12 @@
                            █▀▄ █▄█ █▄█ ░█░                            
                            
                            
-Le morpion en ruby 
-projet thp 
+=Le morpion en ruby 
+-projet thp 
 
-Pour lancer le programme 
+Pour lancer le programme :
 
--> git clone 
--> cd tic_tac_toe_game/
--> bundle install
--> ruby app.rb
+* git clone https://github.com/Lehoax/tic_tac_toe_game
+* cd tic_tac_toe_game/  
+* bundle install  
+* ruby app.rb  
