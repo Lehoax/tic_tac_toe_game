@@ -56,7 +56,7 @@ class Game
             @display.board
         else
             @display.board
-            @display.your_turn(@player1.name)
+            @display.your_turn(@player2.name)
             location = gets.chomp
             @board.put_symbole(location, @player2.symbole)
             @end_game = is_finish?(@player2.name)

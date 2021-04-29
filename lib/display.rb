@@ -25,13 +25,13 @@ class Display
     end
   
     def board
-        puts "-"*25
-        puts "|#{@board.board[":c1"]}|#{@board.board[":c2"]}|#{@board.board[":c3"]}|"
-        puts "-"*25
-        puts "|#{@board.board[":b1"]}|#{@board.board[":b2"]}|#{@board.board[":b3"]}|"
-        puts "-"*25
-        puts "|#{@board.board[":a1"]}|#{@board.board[":a2"]}|#{@board.board[":a3"]}|"
-        puts "-"*25
+        puts " -------------".center(70)
+        puts " | #{@board.board[":c1"]} | #{@board.board[":c2"]} | #{@board.board[":c3"]} |".center(70)
+        puts " -------------".center(70)
+        puts " | #{@board.board[":b1"]} | #{@board.board[":b2"]} | #{@board.board[":b3"]} |".center(70)
+        puts " -------------".center(70)
+        puts " | #{@board.board[":a1"]} | #{@board.board[":a2"]} | #{@board.board[":a3"]} |".center(70)
+        puts " -------------".center(70)
     end
     def victory(name_player)
         puts "____    ____  __    ______ .___________.  ______    __  .______       _______ ".yellow
