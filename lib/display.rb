@@ -54,9 +54,3 @@ class Display
         print"> ".red
     end
 end
-
-
-
-
-
-

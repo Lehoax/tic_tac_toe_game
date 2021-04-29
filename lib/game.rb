@@ -5,6 +5,7 @@ require_relative 'display.rb'
 class Game
     attr_accessor :board, :end_game
     def initialize
+        system "clear"
         @end_game = false
         @board = Board.new
         @display = Display.new(@board)
@@ -47,10 +48,12 @@ class Game
         end
     end
     def round
+        system "clear"
         @display.board
         @display.your_turn(@player1.name)
         location = gets.chomp
         @board.put_symbole(location, @player1.symbole)
+        system "clear"
         @end_game = is_finish?(@player1.name)
         if @end_game == true
             @display.board
@@ -61,6 +64,7 @@ class Game
             @board.put_symbole(location, @player2.symbole)
             @end_game = is_finish?(@player2.name)
             @display.board
+           
         end
     end
    
