@@ -11,7 +11,6 @@ while game.end_game != true
     game.round
     nb += 2.25
    if  nb > 9
-    system "clear"
     puts "                       _                    _ "
     puts "             _        | |                  | |"
     puts " ____   ____| |_  ____| | _     ____  _   _| |"
