@@ -1,8 +1,10 @@
-= Le morpion en ruby  
-- projet thp 
+Le morpion en ruby 
+==================
+projet thp
+----------
 
 
-> Niveau "God mode"
+> Niveau "God mode"   
 
 Pour lancer le programme :
 
