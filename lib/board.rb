@@ -5,9 +5,11 @@ class Board
     end
     def put_symbole(location, symbole)
 
-        if  @board[":#{location}"].include?(" ")
+        begin @board[":#{location}"].include?(" ")
             @board[":#{location}"] = symbole
-        end
+        rescue 
+        end 
+            
         
     end
    
